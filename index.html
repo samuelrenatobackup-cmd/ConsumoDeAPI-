@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de CEP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Consulta de CEP</h1>
+        <p>Digite um CEP para consultar o endereço.</p>
+
+        <div class="busca">
+            <input 
+                type="text" 
+                id="cep" 
+                placeholder="Digite seu CEP"
+                maxlength="9"
+            >
+
+            <button onclick="buscarCEP()">Buscar</button>
+        </div>
+
+        <div id="mensagem"></div>
+
+
+        <section id="resultado" class="resultado">
+
+            <div class="campo">
+                <label>CEP</label>
+                <input type="text" id="resultadoCep" readonly>
+            </div>
+
+            <div class="campo">
+                <label>Logradouro</label>
+                <input type="text" id="logradouro" readonly>
+            </div>
+
+            <div class="campo">
+                <label>Bairro</label>
+                <input type="text" id="bairro" readonly>
+            </div>
+
+            <div class="campo">
+                <label>Cidade</label>
+                <input type="text" id="cidade" readonly>
+            </div>
+
+            <div class="campo">
+                <label>Estado</label>
+                <input type="text" id="estado" readonly>
+            </div>
+
+            <div class="campo">
+                <label>IBGE</label>
+                <input type="text" id="ibge" readonly>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
